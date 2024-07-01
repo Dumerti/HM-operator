@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(" ");
         System.out.println("Задание №1");
-        int age = 26; // Возраст человека
+        int age = 17; // Возраст человека
         if (18 <= age) {
-            System.out.println("Если возраст человека равен " + age + " он совершенолетний");
+            System.out.println("Если возраст человека равен " + age + " он совершенолетний, может водить машину ");
         } else {
-            System.out.println("Если возраст человека равен " + age + "  он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("Если возраст человека равен " + age + "  он не достиг совершеннолетия, нужно немного подождать что бы водить машину");
         }
         System.out.println(" ");
         System.out.println("Задание №2");
         int temperature = 22; // темепратура на улице
         if (temperature < 5) {
-            System.out.println("На улице " + temperature + " на улице холодно, нужно надеть шапку");
+            System.out.println("На улице " + temperature + " сегоддня холодно, нужно надеть шапку");
         } else {
             System.out.println("На улице " + temperature + " сегодня тепло, можно идти без шапки");
         }
@@ -54,11 +54,11 @@ public class Main {
         }
         System.out.println(" ");
         System.out.println("Задание №6");
-        int buyTicket = 73;
+        int buyTicket = 60;
         int capacityPlace = 102; // общие количество бест в вагоне
         int sedentaryPlace = 60; // количество сидячих мест
         int standingPlace = capacityPlace - sedentaryPlace; // количество стоячих мест 42
-        if (buyTicket > sedentaryPlace && buyTicket <= capacityPlace) {
+        if (buyTicket >= sedentaryPlace && buyTicket <= capacityPlace) {
             System.out.println("В вагоне остались стоячие места");
         } else if (buyTicket < sedentaryPlace && buyTicket <= capacityPlace) {
             System.out.println("В вагоне остались сидячие места");
