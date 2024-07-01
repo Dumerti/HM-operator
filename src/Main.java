@@ -61,7 +61,7 @@ public class Main {
         if (buyTicket >= sedentaryPlace && buyTicket <= capacityPlace) {
             System.out.println("В вагоне остались стоячие места");
         } else if (buyTicket < sedentaryPlace && buyTicket <= capacityPlace) {
-            System.out.println("В вагоне остались сидячие места");
+            System.out.println("В вагоне остались сидячие и стоячие места");
         } else {
             System.out.println("Вагон полность забит");
         }
